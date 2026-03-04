@@ -1,0 +1,11 @@
+streamlit
+folium
+numpy
+scipy
+branca
+requests
+pandas
+streamlit-folium
+matplotlib
+fastapi
+uvicorn[standard]

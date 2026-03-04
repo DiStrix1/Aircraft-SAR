@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0d1f2d"/>
+      <stop offset="100%" stop-color="#060f18"/>
+    </radialGradient>
+    <!-- Spectrum sweep: red → amber → green (probability zones) -->
+    <linearGradient id="sweep" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#ef4444" stop-opacity="0.45"/>
+      <stop offset="50%"  stop-color="#f97316" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0.25"/>
+    </linearGradient>
+    <linearGradient id="plane" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#0094b3"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer disk -->
+  <circle cx="32" cy="32" r="30" fill="url(#bg)" stroke="#00B4D8" stroke-width="1.5" stroke-opacity="0.6"/>
+  <!-- Spectrum zone fill (the three probability bands) -->
+  <path d="M32 32 L 56 32 A 24 24 0 0 0 32 8 Z" fill="#ef4444" fill-opacity="0.18"/>
+  <path d="M32 32 L 8 32 A 24 24 0 0 1 32 8 Z"  fill="#f97316" fill-opacity="0.14"/>
+  <path d="M32 32 L 8 32 A 24 24 0 0 0 32 56 L 56 32 A 24 24 0 0 0 32 32 Z" fill="#22c55e" fill-opacity="0.10"/>
+  <!-- Radar rings -->
+  <circle cx="32" cy="32" r="24" fill="none" stroke="#00B4D8" stroke-width="0.5" stroke-opacity="0.25"/>
+  <circle cx="32" cy="32" r="16" fill="none" stroke="#00B4D8" stroke-width="0.5" stroke-opacity="0.2"/>
+  <circle cx="32" cy="32" r="8"  fill="none" stroke="#00B4D8" stroke-width="0.5" stroke-opacity="0.3"/>
+  <!-- Crosshairs -->
+  <line x1="32" y1="8"  x2="32" y2="56" stroke="#00B4D8" stroke-width="0.4" stroke-opacity="0.2"/>
+  <line x1="8"  y1="32" x2="56" y2="32" stroke="#00B4D8" stroke-width="0.4" stroke-opacity="0.2"/>
+  <!-- Aircraft top-view (fuselage) -->
+  <ellipse cx="32" cy="32" rx="2.5" ry="9" fill="url(#plane)" transform="rotate(-45 32 32)"/>
+  <!-- Main wings -->
+  <path d="M32 28 L 10 40 L 18 40 L 32 32 L 46 40 L 54 40 Z" fill="url(#plane)" transform="rotate(-45 32 32)"/>
+  <!-- Horizontal stab -->
+  <path d="M32 46 L 24 52 L 27 52 L 32 48 L 37 52 L 40 52 Z" fill="url(#plane)" fill-opacity="0.8" transform="rotate(-45 32 32)"/>
+  <!-- Centroid blip -->
+  <circle cx="40" cy="24" r="2" fill="#00ffcc" fill-opacity="0.9"/>
+</svg>

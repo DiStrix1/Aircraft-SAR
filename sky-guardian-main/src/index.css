@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 96%;
+    --foreground: 218 47% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 218 47% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 218 47% 20%;
+
+    --primary: 193 100% 42%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 16 100% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 20% 93%;
+    --muted-foreground: 218 20% 50%;
+
+    --accent: 200 100% 36%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 193 100% 42%;
+
+    --radius: 1rem;
+
+    /* Custom tokens */
+    --navy: 218 47% 20%;
+    --deep-blue: 200 100% 36%;
+    --cyan: 193 100% 42%;
+    --orange: 16 100% 60%;
+    --glass-bg: 0 0% 100% / 0.6;
+    --glass-border: 0 0% 100% / 0.3;
+    --glass-blur: 16px;
+    --glass-shadow: 0 8px 32px hsla(0, 0%, 0%, 0.08);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: hsl(var(--deep-blue));
+  }
+}
+
+@layer components {
+  .glass {
+    background: hsla(var(--glass-bg));
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid hsla(var(--glass-border));
+    border-radius: var(--radius);
+    box-shadow: var(--glass-shadow);
+  }
+
+  .glass-strong {
+    background: hsla(0, 0%, 100%, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid hsla(0, 0%, 100%, 0.35);
+    border-radius: var(--radius);
+    box-shadow: 0 8px 32px hsla(0, 0%, 0%, 0.1);
+  }
+
+  .glass-subtle {
+    background: hsla(0, 0%, 100%, 0.45);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid hsla(0, 0%, 100%, 0.2);
+    border-radius: var(--radius);
+    box-shadow: 0 4px 16px hsla(0, 0%, 0%, 0.05);
+  }
+
+  .section-tag {
+    @apply inline-block px-4 py-1.5 text-xs font-mono font-semibold tracking-widest uppercase rounded-full;
+    background: hsla(var(--cyan), 0.1);
+    color: hsl(var(--cyan));
+    border: 1px solid hsla(var(--cyan), 0.2);
+  }
+
+  .btn-primary-solid {
+    @apply px-8 py-3.5 font-semibold text-sm rounded-xl transition-all duration-300;
+    background: linear-gradient(135deg, hsl(var(--cyan)), hsl(var(--deep-blue)));
+    color: hsl(var(--primary-foreground));
+    box-shadow: 0 4px 20px hsla(var(--cyan), 0.35);
+  }
+  .btn-primary-solid:hover {
+    box-shadow: 0 6px 28px hsla(var(--cyan), 0.5);
+    transform: translateY(-2px);
+  }
+
+  .btn-ghost {
+    @apply px-8 py-3.5 font-semibold text-sm rounded-xl transition-all duration-300;
+    border: 1.5px solid hsl(var(--cyan));
+    color: hsl(var(--cyan));
+    background: transparent;
+  }
+  .btn-ghost:hover {
+    background: hsla(var(--cyan), 0.08);
+    transform: translateY(-2px);
+  }
+
+  .metric-card {
+    @apply glass p-5 text-center;
+  }
+
+  .metric-value {
+    @apply text-3xl font-mono font-bold;
+    color: hsl(var(--cyan));
+  }
+
+  .metric-label {
+    @apply text-xs font-mono uppercase tracking-wider mt-1;
+    color: hsl(var(--muted-foreground));
+  }
+
+  .pipeline-arrow {
+    @apply hidden lg:flex items-center justify-center text-2xl;
+    color: hsl(var(--cyan));
+  }
+
+  .pass-badge {
+    @apply inline-flex items-center px-3 py-1 text-xs font-mono font-bold rounded-full;
+    background: hsla(142, 76%, 36%, 0.12);
+    color: hsl(142, 76%, 36%);
+    border: 1px solid hsla(142, 76%, 36%, 0.25);
+  }
+
+  .zone-high { background: hsla(0, 84%, 60%, 0.15); border-left: 4px solid hsl(0, 84%, 60%); }
+  .zone-medium { background: hsla(30, 100%, 50%, 0.12); border-left: 4px solid hsl(30, 100%, 50%); }
+  .zone-low { background: hsla(142, 76%, 36%, 0.1); border-left: 4px solid hsl(142, 76%, 36%); }
+}
+
+/* Leaflet overrides */
+.leaflet-container {
+  background: hsl(218, 47%, 12%) !important;
+  border-radius: var(--radius);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: hsla(var(--cyan), 0.3);
+  border-radius: 3px;
+}
+
+html {
+  scroll-behavior: smooth;
+}

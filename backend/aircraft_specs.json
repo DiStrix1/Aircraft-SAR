@@ -1,0 +1,182 @@
+{
+    "Cessna 172S": {
+        "category": "GA",
+        "glide_ratio": 9.0,
+        "best_glide_speed_kts": 68,
+        "descent_rate_fpm": 700,
+        "cruise_speed_kts": 122,
+        "fuel_burn_kg_hr": 36,
+        "max_altitude_ft": 14000,
+        "max_range_km": 1289
+    },
+    "Cessna 182": {
+        "category": "GA",
+        "glide_ratio": 10.5,
+        "best_glide_speed_kts": 75,
+        "descent_rate_fpm": 750,
+        "cruise_speed_kts": 145,
+        "fuel_burn_kg_hr": 55,
+        "max_altitude_ft": 18100,
+        "max_range_km": 1689
+    },
+    "Piper PA-28-181": {
+        "category": "GA",
+        "glide_ratio": 10.0,
+        "best_glide_speed_kts": 76,
+        "descent_rate_fpm": 800,
+        "cruise_speed_kts": 124,
+        "fuel_burn_kg_hr": 45,
+        "max_altitude_ft": 14100,
+        "max_range_km": 1232
+    },
+    "Diamond DA40": {
+        "category": "GA",
+        "glide_ratio": 11.0,
+        "best_glide_speed_kts": 73,
+        "descent_rate_fpm": 700,
+        "cruise_speed_kts": 147,
+        "fuel_burn_kg_hr": 28,
+        "max_altitude_ft": 16400,
+        "max_range_km": 1575
+    },
+    "ATR 72-600": {
+        "category": "Turboprop",
+        "glide_ratio": 12.0,
+        "best_glide_speed_kts": 130,
+        "descent_rate_fpm": 1500,
+        "cruise_speed_kts": 275,
+        "fuel_burn_kg_hr": 900,
+        "max_altitude_ft": 25000,
+        "max_range_km": 1528
+    },
+    "Dash 8 Q400": {
+        "category": "Turboprop",
+        "glide_ratio": 12.5,
+        "best_glide_speed_kts": 150,
+        "descent_rate_fpm": 1600,
+        "cruise_speed_kts": 360,
+        "fuel_burn_kg_hr": 1100,
+        "max_altitude_ft": 25000,
+        "max_range_km": 2522
+    },
+    "Airbus A220-300": {
+        "category": "Regional Jet",
+        "glide_ratio": 15.0,
+        "best_glide_speed_kts": 200,
+        "descent_rate_fpm": 2200,
+        "cruise_speed_kts": 470,
+        "fuel_burn_kg_hr": 1800,
+        "max_altitude_ft": 41000,
+        "max_range_km": 6400
+    },
+    "Embraer E175": {
+        "category": "Regional Jet",
+        "glide_ratio": 14.5,
+        "best_glide_speed_kts": 190,
+        "descent_rate_fpm": 2100,
+        "cruise_speed_kts": 447,
+        "fuel_burn_kg_hr": 2100,
+        "max_altitude_ft": 41000,
+        "max_range_km": 3735
+    },
+    "Airbus A320-200": {
+        "category": "Jet",
+        "glide_ratio": 16.0,
+        "best_glide_speed_kts": 230,
+        "descent_rate_fpm": 2500,
+        "cruise_speed_kts": 447,
+        "fuel_burn_kg_hr": 2500,
+        "max_altitude_ft": 39000,
+        "max_range_km": 6150
+    },
+    "Boeing 737-800": {
+        "category": "Jet",
+        "glide_ratio": 15.0,
+        "best_glide_speed_kts": 230,
+        "descent_rate_fpm": 2600,
+        "cruise_speed_kts": 450,
+        "fuel_burn_kg_hr": 2600,
+        "max_altitude_ft": 41000,
+        "max_range_km": 5765
+    },
+    "Boeing 787-9 Dreamliner": {
+        "category": "Widebody",
+        "glide_ratio": 19.0,
+        "best_glide_speed_kts": 255,
+        "descent_rate_fpm": 2600,
+        "cruise_speed_kts": 488,
+        "fuel_burn_kg_hr": 5400,
+        "max_altitude_ft": 43000,
+        "max_range_km": 14140
+    },
+    "Boeing 747-400": {
+        "category": "Widebody",
+        "glide_ratio": 15.5,
+        "best_glide_speed_kts": 250,
+        "descent_rate_fpm": 3200,
+        "cruise_speed_kts": 490,
+        "fuel_burn_kg_hr": 11000,
+        "max_altitude_ft": 45100,
+        "max_range_km": 13450
+    },
+    "Boeing 777-200ER": {
+        "category": "Widebody",
+        "glide_ratio": 17.0,
+        "best_glide_speed_kts": 260,
+        "descent_rate_fpm": 3000,
+        "cruise_speed_kts": 490,
+        "fuel_burn_kg_hr": 6500,
+        "max_altitude_ft": 43100,
+        "max_range_km": 13080
+    },
+    "Airbus A350-900": {
+        "category": "Widebody",
+        "glide_ratio": 18.0,
+        "best_glide_speed_kts": 255,
+        "descent_rate_fpm": 2800,
+        "cruise_speed_kts": 488,
+        "fuel_burn_kg_hr": 5800,
+        "max_altitude_ft": 43000,
+        "max_range_km": 15000
+    },
+    "Airbus A380-800": {
+        "category": "Widebody",
+        "glide_ratio": 17.5,
+        "best_glide_speed_kts": 270,
+        "descent_rate_fpm": 3000,
+        "cruise_speed_kts": 489,
+        "fuel_burn_kg_hr": 12500,
+        "max_altitude_ft": 43000,
+        "max_range_km": 15200
+    },
+    "Airbus A330-300": {
+        "category": "Widebody",
+        "glide_ratio": 16.5,
+        "best_glide_speed_kts": 240,
+        "descent_rate_fpm": 2800,
+        "cruise_speed_kts": 470,
+        "fuel_burn_kg_hr": 5500,
+        "max_altitude_ft": 41000,
+        "max_range_km": 11750
+    },
+    "Bell 412": {
+        "category": "Helicopter",
+        "glide_ratio": 4.2,
+        "best_glide_speed_kts": 80,
+        "descent_rate_fpm": 1800,
+        "cruise_speed_kts": 122,
+        "fuel_burn_kg_hr": 380,
+        "max_altitude_ft": 20000,
+        "max_range_km": 720
+    },
+    "Sikorsky S-92": {
+        "category": "SAR Helicopter",
+        "glide_ratio": 4.5,
+        "best_glide_speed_kts": 85,
+        "descent_rate_fpm": 1600,
+        "cruise_speed_kts": 151,
+        "fuel_burn_kg_hr": 450,
+        "max_altitude_ft": 15000,
+        "max_range_km": 1000
+    }
+}
