@@ -1,0 +1,29 @@
+services:
+  # ── 1. FastAPI Backend ─────────────────────────────────────────────────────
+  - type: web
+    name: aircraft-sar-backend
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
+    plan: free
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+
+  # ── 2. React/Vite Frontend ────────────────────────────────────────────────
+  - type: web
+    name: aircraft-sar-frontend
+    runtime: static
+    rootDir: sky-guardian-main
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    plan: free
+    envVars:
+      - key: VITE_API_URL
+        # After deploying the backend, paste its URL here (e.g. https://aircraft-sar-backend.onrender.com)
+        value: https://aircraft-sar-backend.onrender.com
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
